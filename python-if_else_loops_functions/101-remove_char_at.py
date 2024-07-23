@@ -5,6 +5,7 @@ def remove_char_at(s, n):
         return s
     return s[:n] + s[n+1:]
 
+
 # You can test the function with the provided examples
 if __name__ == "__main__":
     print(remove_char_at("Best School", 3))  # "Bes School"
