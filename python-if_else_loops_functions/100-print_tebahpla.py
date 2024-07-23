@@ -12,7 +12,7 @@ def print_tebahpla():
         else:
             # For odd indices, add uppercase letters starting from 'Y'
             result += chr(90 - (i // 1))
-    # Print the final result string
-    print(result)
+    # Print the final result string using string formatting
+    print("{}".format(result))
 
 print_tebahpla()
