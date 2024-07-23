@@ -15,4 +15,5 @@ def print_tebahpla():
     # Print the final result string using string formatting without a newline
     print("{}".format(result), end='')
 
+
 print_tebahpla()
