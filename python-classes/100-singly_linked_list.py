@@ -5,7 +5,7 @@
 
 This module defines the Node class
 which represents a node in the singly linked list.
-It also defines the SinglyLinkedList class 
+It also defines the SinglyLinkedList class
 which provides methods to manage a singly
 linked list including sorted insertion and string representation.
 """
