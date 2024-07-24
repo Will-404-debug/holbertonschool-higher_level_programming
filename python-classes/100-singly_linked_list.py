@@ -8,10 +8,9 @@ It also defines the SinglyLinkedList class which provides methods to manage a si
 linked list including sorted insertion and string representation.
 """
 
-
 class Node:
     """Represents a node in a singly linked list.
-    
+
     Attributes:
         data (int): The data stored in the node.
         next_node (Node): The reference to the next node in the list.
@@ -44,9 +43,10 @@ class Node:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
+
 class SinglyLinkedList:
     """Represents a singly linked list.
-    
+
     Attributes:
         head (Node): The head node of the list.
     """
@@ -65,7 +65,7 @@ class SinglyLinkedList:
 
     def sorted_insert(self, value):
         """Inserts a new Node into the correct sorted position in the list.
-        
+
         Args:
             value (int): The data value of the new node.
         """
