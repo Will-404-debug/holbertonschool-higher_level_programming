@@ -22,8 +22,8 @@ class Square:
             position (tuple): The position of the square. Default is (0, 0).
 
         Raises:
-            TypeError: If size is not an integer or position is not a tuple of 2 positive integers.
-            ValueError: If size is less than 0.
+            TypeError
+            ValueError
         """
         self.size = size
         self.position = position
@@ -32,7 +32,7 @@ class Square:
     def size(self):
         """
         Retrieves the size of the square.
-        
+ 
         Returns:
             int: The size of the square.
         """
