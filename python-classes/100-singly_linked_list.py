@@ -1,6 +1,14 @@
 #!/usr/bin/python3
 
 
+"""Module for defining a singly linked list.
+
+This module defines the Node class which represents a node in the singly linked list.
+It also defines the SinglyLinkedList class which provides methods to manage a singly
+linked list including sorted insertion and string representation.
+"""
+
+
 class Node:
     """Represents a node in a singly linked list.
     
