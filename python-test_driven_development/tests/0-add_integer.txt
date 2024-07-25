@@ -15,11 +15,11 @@ TypeError: b must be an integer
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
->>> add_integer(30**308, 30**308)
+>>> add_integer(3000000**30000008, 3000000**30000008)
 Traceback (most recent call last):
     ...
 OverflowError: int too large to convert to float
->>> add_integer(30**308)
+>>> add_integer(300000**30000008)
 Traceback (most recent call last):
     ...
 OverflowError: int too large to convert to float
