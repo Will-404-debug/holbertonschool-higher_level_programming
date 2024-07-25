@@ -45,14 +45,6 @@ def add_integer(a, b=98):
     
     return int(a) + int(b)
 
-   try:
-        a = int(a)
-        b = int(b)
-    except OverflowError:
-        raise OverflowError("int too large to convert to float")
-
-    return a + b
-
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
