@@ -42,7 +42,14 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
-    
+
+
+    # Convert values to string and check their length
+    if isinstance(a, float) and (len(str(a)) > 310):
+        raise OverflowError("a is too large")
+    if isinstance(b, float) and (len(str(b)) > 310):
+        raise OverflowError("b is too large")
+
     return int(a) + int(b)
 
 if __name__ == "__main__":
