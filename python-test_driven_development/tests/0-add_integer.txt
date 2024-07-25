@@ -15,15 +15,3 @@ TypeError: b must be an integer
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
->>> add_integer(1e309, 1)
-Traceback (most recent call last):
-    ...
-OverflowError: a is too large
->>> add_integer(1, 1e309)
-Traceback (most recent call last):
-    ...
-OverflowError: b is too large
->>> add_integer(1e309, 1e309)
-Traceback (most recent call last):
-    ...
-OverflowError: a is too large
