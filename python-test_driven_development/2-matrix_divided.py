@@ -8,14 +8,14 @@ def matrix_divided(matrix, div):
     """Divides all elements of a matrix by a given divisor.
 
     Args:
-        matrix (list of lists): A matrix represented as a list of lists of integers or floats.
+        matrix (list of lists): List of lists of integers/floats.
         div (int/float): The divisor.
 
     Returns:
-        list of lists: A new matrix with each element divided by div and rounded to 2 decimal places.
+        list of lists: New matrix with elements divided by div, rounded to 2 decimal places.
 
     Raises:
-        TypeError: If matrix elements are not lists of integers/floats or if div is not a number.
+        TypeError: If matrix elements are not lists of integers/²floats or if div is not a number.
         TypeError: If the rows of the matrix are not of the same size.
         ZeroDivisionError: If div is zero.
     """
