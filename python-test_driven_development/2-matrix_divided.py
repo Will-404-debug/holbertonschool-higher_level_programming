@@ -26,11 +26,13 @@ def matrix_divided(matrix, div):
             "matrix_divided() missing 1 required positional argument: "
             "'matrix' or 'div'"
         )
-    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
+    if not isinstance(matrix, list) or not all(isinstance(row, list) 
+            for row in matrix):
         raise TypeError(
             "matrix must be a matrix (list of lists) of integers/floats"
         )
-    if not all(isinstance(element, (int, float)) for row in matrix for element in row):
+    if not all(isinstance(element, (int, float)) for row in matrix 
+            for element in row):
         raise TypeError(
             "matrix must be a matrix (list of lists) of integers/floats"
         )
@@ -42,7 +44,6 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-
 
     return [[round(element / div, 2) for element in row] for row in matrix]
 
